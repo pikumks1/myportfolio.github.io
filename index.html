@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,700&display=swap" rel="stylesheet">
+    <style>
+        /* global classes */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgba(5, 97, 91, 0.763);
+            color: bisque;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Website scection classes */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgba(8, 43, 41, 0.815);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgba(131, 196, 193, 0.805);
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            margin: 29px 83px;
+            height: 1px;
+            background: #f59332;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: 80px 0; */
+            margin: 22vh;
+        }
+
+        .firstsection>div {
+            width: 35%;
+        }
+
+        .leftsection {
+            /* background-color: red; */
+            font-size: 2.5rem;
+            /* margin: 30px; */
+        }
+
+        .leftsection .buttons{
+            padding: 23px 0;
+        }
+        .leftsection .btn {
+            padding: 12px;
+            color: white;
+            font-size: 16px;
+            background: #3f8681;
+            border: 2px solid white;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .leftsection .btn:hover{
+            background-color: #1a524e;
+            margin: 1px 0;
+        }
+
+        .rightsection {
+            /* background-color: red; */
+        }
+
+        .rightsection img {
+            width: 90%;
+            /* margin: 34px 0; */
+        }
+
+        .SecondSection {
+            /* background-color: rgb(233, 144, 27); */
+            max-width: 80vw;
+            /* display: flex; */
+            /* align-items: center; */
+            margin: auto;
+            height: 500px;
+        }
+
+        .SecondSection h1 {
+            font-size: 1.7rem;
+        }
+
+
+        .SecondSection .box {
+            background: wheat;
+            width: 80vw;
+            height: 2px;
+            margin: 59px 0;
+            display: flex;
+        }
+
+        .SecondSection .vertical {
+            background: wheat;
+            width: 1px;
+            height: 80px;
+            margin: 0 100px;
+        }
+
+        footer {
+            background-color: #294644;
+            /* height: 200px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 30px 80px;
+            color: white;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 150px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: #b5c5c1;
+            padding: 12px 0;
+        }
+
+
+
+        /* Utility Classes */
+        .purple {
+            color: white;
+        }
+
+        .text-grey {
+            color: #c0d9d6;
+        }
+
+        #element {
+            color: white;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -55px;
+            left: -24px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 40px;
+            width: 180px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 55px;
+            width: 180px;
+            color: #cde6e4;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Manish's Portfolio</div>
+            <div class="righ">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi My name is <span class="purple">Manish</span>
+                <div>I am a passionate</div>
+                <!-- <div>software engineer.</div> -->
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="sw.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="SecondSection">
+            <span class="text-grey">What I have done so far :</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="w1.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        State bank Of India (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum explicabo tenetur, sit architecto
+                        minus cumque magni incidunt possimus dolorem, itaque pariatur quia voluptatem.
+                        <!-- I worked in SBI Cards for 1 year, There is managed card reated financal services.  -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="w4.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Bharti Airtel Pvt Ltd (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum explicabo tenetur, sit architecto
+                        minus cumque magni incidunt possimus dolorem, itaque pariatur quia voluptatem.
+                        <!-- I worked in SBI Cards for 1 year, There is managed card reated financal services.  -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="w3.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Hero Motocorp Pvt Ltd (2022-present)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum explicabo tenetur, sit architecto
+                        minus cumque magni incidunt possimus dolorem, itaque pariatur quia voluptatem.
+                        <!-- I worked in SBI Cards for 1 year, There is managed card reated financal services.  -->
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="w1.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        State bank Of India (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum explicabo tenetur, sit architecto
+                        minus cumque magni incidunt possimus dolorem, itaque pariatur quia voluptatem.
+                        <!-- I worked in SBI Cards for 1 year, There is managed card reated financal services.  -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="w1.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        State bank Of India (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum explicabo tenetur, sit architecto
+                        minus cumque magni incidunt possimus dolorem, itaque pariatur quia voluptatem.
+                        <!-- I worked in SBI Cards for 1 year, There is managed card reated financal services.  -->
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="w1.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        State bank Of India (2019-2020)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum explicabo tenetur, sit architecto
+                        minus cumque magni incidunt possimus dolorem, itaque pariatur quia voluptatem.
+                        <!-- I worked in SBI Cards for 1 year, There is managed card reated financal services.  -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Manish's developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; xtremesportfolio.com | All rights reserved.
+        </div>
+    </footer>
+
+
+
+    <!-- to animate use Type.js from github -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer</i>', '&amp; Backend Developer', '&amp; Siebel Consultant.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
